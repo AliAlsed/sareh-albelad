@@ -13,6 +13,15 @@ body {
   color: #444;
 }
 
+/**
+fonts
+*/
+
+@font-face {
+  font-family: arabic;
+  src: url(../fonts/ar.ttf);
+}
+
 a {
   color: #428bca;
 }
@@ -28,8 +37,9 @@ h3,
 h4,
 h5,
 h6,
+p,
 .font-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: "arabic", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -315,9 +325,14 @@ h6,
   padding-left: 20px;
 }
 
+.ar-subtitle {
+  direction: rtl;
+  text-align: justify;
+}
+
 .mobile-nav-toggle {
   position: fixed;
-  right: 15px;
+  left: 15px;
   top: 20px;
   z-index: 9998;
   border: 0;
@@ -533,7 +548,7 @@ section {
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5c768d;
+  color: #000;
 }
 
 .section-title p {
@@ -602,8 +617,6 @@ section {
 }
 
 .about .section-title p {
-  text-align: left;
-  font-style: italic;
   color: #666;
 }
 
