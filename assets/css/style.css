@@ -38,6 +38,7 @@ h4,
 h5,
 h6,
 p,
+li,
 .font-primary {
   font-family: "arabic", sans-serif;
 }
@@ -150,7 +151,7 @@ p,
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 60px;
 }
 
 /*--------------------------------------------------------------
@@ -176,8 +177,8 @@ p,
   color: #5c768d;
   padding: 12px 15px;
   transition: 0.3s;
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-family: "arabic", sans-serif;
 }
 
 .nav-menu a:hover,
@@ -860,6 +861,9 @@ section {
 .services {
   padding-bottom: 30px;
 }
+.news {
+  padding-bottom: 30px;
+}
 
 .services .icon-box {
   margin-bottom: 20px;
@@ -890,6 +894,13 @@ section {
 }
 
 .services .title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 15px;
+}
+.news .title {
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 18px;
@@ -1521,4 +1532,54 @@ section {
 
 #footer .credits a {
   color: #9eccf4;
+}
+
+ul,
+li {
+  font-family: "arabic" !important;
+  font-size: 14px;
+}
+.logox {
+  height: auto;
+  width: 100%;
+}
+.icon-box .icon::after {
+  margin-left: 15px;
+}
+.owl-controls .owl-Buttons {
+  position: relative;
+}
+.owl-controls .owl-prev {
+  position: absolute;
+  left: -40px;
+  bottom: 230px;
+  padding: 8px 17px;
+  background: #26ccca;
+  transition: 0.5s;
+}
+.owl-controls .owl-next {
+  position: absolute;
+  left: -40px;
+  bottom: 230px;
+  padding: 8px 17px;
+  background: #26ccca;
+  transition: 0.5s;
+}
+
+.owl-controls .owl-next:after,
+.owl-controls .owl-prev:after {
+  content: "\f104";
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 16px;
+}
+.owl-controls .owl-next:after {
+  content: "\f105";
+}
+.owl-controls .owl-next:hover,
+.owl-controls .owl-prev:hover {
+  background: #000;
+}
+.img-circle {
+  border-radius: 50%;
 }
